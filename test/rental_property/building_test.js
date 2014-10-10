@@ -15,10 +15,10 @@ describe("Building", function(){
       myUnit;
 
     beforeEach(function(){
-      manager = new Manager("Jane Doe", "123-4567"), 
-      tenant = new Tenant("Jackie Adams", "123-7654"),  
-      contactOne = new Person("Anna Adams", "765-4321"), 
-      contactTwo = new Person("Devin Daniels", "765-1234")
+      manager = new Manager("Jane Doe", "123-4567");
+      tenant = new Tenant("Jackie Adams", "123-7654");  
+      contactOne = new Person("Anna Adams", "765-4321"); 
+      contactTwo = new Person("Devin Daniels", "765-1234");
       myBuilding = new Building("123 Gotham Ave");
       myUnit = new Unit("806", myBuilding, 400, 2000);
     });
@@ -89,6 +89,7 @@ describe("Building", function(){
         tenant.addReference(contactTwo);
         myBuilding.addTenant(myUnit, tenant);
         expect(myUnit.tenant).to.eql(tenant);
+
       });
 
     });

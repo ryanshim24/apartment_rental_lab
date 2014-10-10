@@ -18,7 +18,7 @@ describe("Manager", function() {
 
     it("should include @contact", function() {
       expect(jane.contact).to.eql("123-4567");
-    })
+    });
   });
 
   describe("inheriting from Person", function(){
@@ -34,7 +34,7 @@ describe("Manager", function() {
   describe("#addBuilding", function(){
     it("should add instances of Building", function() {
       var building = new app.Building("123 Gotham Ave");
-      jane.addBuilding(building)
+      jane.addBuilding(building);
       expect(jane.buildings).to.eql([building]);
     });
   });
