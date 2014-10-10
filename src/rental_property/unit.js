@@ -10,6 +10,7 @@ function Unit (number, building, sqft, rent) {
 
 Unit.prototype.available = function(){
   // Returns true if unit is available, otherwise false
+  // If the Unit does not have a tenant that means it's avaliable.
   if (this.tenant === null) {
     return true;
   } else {

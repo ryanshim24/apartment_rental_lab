@@ -15,8 +15,8 @@ describe("Building", function(){
       myUnit;
 
     beforeEach(function(){
-      manager = new Manager("Jane Doe", "123-4567");
-      tenant = new Tenant("Jackie Adams", "123-7654");  
+      manager = new Manager("Jane Doe", "123-4567"); //Makes a new manager object called manager
+      tenant = new Tenant("Jackie Adams", "123-7654");  //makes a new tenant object called tenant
       contactOne = new Person("Anna Adams", "765-4321"); 
       contactTwo = new Person("Devin Daniels", "765-1234");
       myBuilding = new Building("123 Gotham Ave");
